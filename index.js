@@ -8,6 +8,6 @@ const apiConsultasRuoter = require('./apis/consultas/consultas.router');
 app.use(express.json());
 app.use('/api/api', apiConsultasRuoter);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
     console.log('Servidor corriendo en el puerto 3000');
 })
